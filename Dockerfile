@@ -14,7 +14,7 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Set the environment variables for the flask app
-ENV FLASK_RUN_HOST = 0.0.0.0
+ENV FLASK_RUN_HOST=0.0.0.0
 
 # Expose the port on which Flask app will run
 EXPOSE 5000
