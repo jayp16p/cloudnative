@@ -198,3 +198,56 @@ kubectl get pods -n default (to check the pods)
 Once your pod is up and running, run the port-forward to expose the service
 
 kubectl port-forward service/<service_name> 5000:5000
+
+#######SCREENSHOTS THAT MAY BE USEFUL, might save you hours of troubleshooting!
+
+![image](https://github.com/jayp16p/cloudnative/assets/106398902/ba1ce0d3-5a71-4a69-bdd0-17e526650624)
+Use the push commands to push docker image to ECR - see below
+![image](https://github.com/jayp16p/cloudnative/assets/106398902/ed122d46-3649-4a9e-9192-3ab605346e33)
+
+Once done it'll look like
+![image](https://github.com/jayp16p/cloudnative/assets/106398902/c83c9b56-3ec0-4a1c-916b-a21d3a715bb4)
+CREATE EKS clusters and roles,
+![image](https://github.com/jayp16p/cloudnative/assets/106398902/fc169a84-06da-41ee-91c6-92093f98893d)
+![image](https://github.com/jayp16p/cloudnative/assets/106398902/62ff4148-238c-4d45-814e-b09a67833997)
+
+MAKE SURE SG has right inbound and outbound rules, inbound allow 5000
+
+Add node group once cluster is up
+
+![image](https://github.com/jayp16p/cloudnative/assets/106398902/864da54f-eecc-4a41-8847-6e7dc36341d8)
+
+Create node groups
+![image](https://github.com/jayp16p/cloudnative/assets/106398902/d231a57d-d8bc-4721-b626-874ae1e7eafa)
+![image](https://github.com/jayp16p/cloudnative/assets/106398902/a9b28596-1e3e-443e-ac9a-582ca8f2a50a)
+
+
+MAKE SURE TO RUN THIS BEFORE RUNNING EKS.py - change as necessary
+aws eks update-kubeconfig --name cloud-native-cluster
+
+
+![image](https://github.com/jayp16p/cloudnative/assets/106398902/9dffa8f3-4341-440a-8481-27e36dde1339)
+
+![image](https://github.com/jayp16p/cloudnative/assets/106398902/f2fe58eb-cd31-4248-ae27-0cd089aa44f3)
+
+![image](https://github.com/jayp16p/cloudnative/assets/106398902/bf879969-f550-4e33-8f37-0b259838cad7)
+
+PORT FORWARD FOR IT TO WORK ON MY DEVICE
+
+![image](https://github.com/jayp16p/cloudnative/assets/106398902/b9a82b37-8629-49db-b933-73a7a7a95cdf)
+
+
+FINAL TEST
+
+![image](https://github.com/jayp16p/cloudnative/assets/106398902/a5d82b62-588d-4842-9941-eb4878f8658a)
+
+
+
+
+
+
+
+
+
+
+
