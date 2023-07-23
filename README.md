@@ -198,7 +198,7 @@ kubectl get pods -n default (to check the pods)
 Once your pod is up and running, run the port-forward to expose the service
 
 kubectl port-forward service/<service_name> 5000:5000
-
+```
 #######SCREENSHOTS THAT MAY BE USEFUL, might save you hours of troubleshooting!
 
 ![image](https://github.com/jayp16p/cloudnative/assets/106398902/ba1ce0d3-5a71-4a69-bdd0-17e526650624)
